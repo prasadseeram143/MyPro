@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body bgcolor="#FF99CC">
+function validateForm()
+{
+var x=document.forms["input"]["customer_name"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+}
+
+<h1 align="center" style="color:#000066">Enter The Complaint Details</h1>
+<form name='input' action='/details.html/' onsubmit="return validateForm()" method='post'>
+<table align="center" border="1">
+<tr><td>Customer Name</td><td><input type='Text' name='customer_name' value=''/></td></tr>
+<tr><td>Customer Cell Number</td><td><input type='Number' name='customer_mnum' value=''></td></tr>
+<tr><td>Complaint Number</td><td><input type='Number' name='complaint_num_' value='' /></td></tr>
+<tr><td>Complaint Problem</td><td><input type='Text' name='complaint_problem',value=''/></td></tr>
+<tr align="center"><td colspan="3"><input type='submit' value="Submit"></td></tr>
+</table>
+
+
+
+</body>
+</html>
+

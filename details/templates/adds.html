@@ -1,0 +1,18 @@
+<html>
+<head>
+
+<title>Add a complaint</title>
+<b>Add new Complaint </b>
+
+</head>
+<body bgcolor="#FF99FF">
+
+<form name='input' action='/adds/' method="post">
+
+
+{%csrf_token%}{{form.as_p}}<input type="submit" value="Add Complaint">
+
+</form>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<title>Complaints</title>
+<style>
+p{
+font-size:18px; background-position:center; color:#990000; font-size:36px;
+margin:20px;
+color:green;
+}
+
+</style>
+
+
+<body bgcolor="#FFCCFF">
+{% if s %}
+<h1 align="center" style="color:#000066"> Hi Welcome to the ComplaintRecieving Panel</h1>
+<center><p>Complaint Details</p></center>
+<b><b><hr></b></b> 
+<table align="center" border=1 cellpadding="10"><tr><th><i>Customer name</i></th><th><i>Customer Mobile Number</i></th><th><i>Problem for complaint</i></th><th><i>DELETE?</i></th></tr>
+{% for i in s %}
+<tr><td align='left'><a href='/shows/{{i.id}}/'> {{i.customer_name}} </a></td><td align='left'><a href='/shows/{{i.id}}/'> {{i.customer_mnum}} </a></td><td align='left'><a href='/shows/{{i.id}}/'> {{i.complaint_problem}} </a></td>           
+<td><a href='/deletes/{{i.id}}/' id='{{i.id}}' class='delete_button'>Delete</a><td></tr>
+{%endfor%}
+</table>
+{% else %}
+<b><b><hr></b></b> 
+     
+<p>One Complaint details deleted</p>
+{%endif%}<br>
+<b><b><hr></b></b> 
+
+<center><a style="font-size:30px; margin:5px; color:#FF0000;
+background-position:center"; href='/adds/'> New complaint</a>`
+<a style="font-size:30px; margin:5px; color:#FF0000;
+background-position:center"; href='/'>complaints</a></center>
+<b><b><hr></b></b> 
+
+</body>
+</html>`

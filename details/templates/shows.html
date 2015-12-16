@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<title>{{s.Customer_name}} details</title>
+<style>
+p{
+font-size:18px;
+margin:25px;
+color:green;
+}
+a
+{
+font-size:18px;
+background-position:bottom;
+margin:5px;
+}
+</style>
+</head>
+<body bgcolor="#FF99FF">
+
+<p>Customer Details</p><br>
+<b><b><hr></b></b>
+<table align='left' border ='1'>
+<tr><td>Customer Name:</td><td align='center'>{{s.customer_name}}
+</td></tr>
+<tr><td>Customer Number:</td><td align='center'>{{s.customer_mnum}}</td></tr>
+<tr><td>Complaint Number:</td><td align='center'>{{s.complaint_num}}</td></tr>
+<tr><td>Complaint Problem:</td><td align='center'>{{s.complaint_problem}}</td></tr>
+</table>
+<br><br><br><br><br><br><br><br>
+<b><b><hr></b></b>
+<a href='/adds/'>New Complaint</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href='/'>Complaints</a>
+
+<b><b><hr></b></b>
+</body>
+</html>
+
