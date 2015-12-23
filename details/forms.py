@@ -4,3 +4,6 @@ class TestForm(ModelForm):
     class Meta:
         model=detail
 
+# This data added by Prasad.
+
+# Changed.......
