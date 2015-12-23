@@ -47,3 +47,6 @@ class Deletes(TemplateView):
 class Errors(TemplateView):
     def get(self,request):
         return render(request,'errors.html')
+
+def test_function(request):
+    pass
